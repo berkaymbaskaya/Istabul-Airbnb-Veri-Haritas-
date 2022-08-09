@@ -60,8 +60,8 @@ ilceler=ilceler.merge(m_df,on="neighbourhood")
 sınıflandırma_dict={"Ortalama Fiyat":"price","İlçedeki toplam ev sayısı":"birim","En Yüksek Fiyat":"max_price","En Düşük Fiyat":"min_price","Ortanca Fiyat":"median_price"}
 
 st.sidebar.header("HARİTA GÖSTERİM SEÇENEKLERİ:")
-#image1=Image.open("https://thumbs.dreamstime.com/b/vector-horizontal-illustration-istanbul-vector-horizontal-illustration-istanbul-black-silhouette-famous-turkish-symbols-118128392.jpg")
-#st.sidebar.image(image1, use_column_width=True)
+image1=Image.open("https://r.resimlink.com/zNOLkjyeAQ.jpg")
+st.sidebar.image(image1, use_column_width=True)
 sınıflandırma_secimi = st.sidebar.selectbox(label = "Harita hangi özelliğe göre renklendirilsin ?  Lütfen Seçiminizi yapın.", 
                                          options =( "Ortalama Fiyat","İlçedeki toplam ev sayısı","En Yüksek Fiyat","En Düşük Fiyat","Ortanca Fiyat"))
 
