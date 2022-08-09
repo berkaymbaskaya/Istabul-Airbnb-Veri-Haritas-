@@ -58,7 +58,7 @@ sınıflandırma_dict={"Ortalama Fiyat":"price","İlçedeki toplam ev sayısı":
 st.sidebar.header("HARİTA GÖSTERİM SEÇENEKLERİ:")
 #image1=Image.open("https://r.resimlink.com/zNOLkjyeAQ.jpg")
 #st.sidebar.image(image1, use_column_width=True)
-sınıflandırma_secimi = st.sidebar.selectbox(label = "Harita hangi özelliğe göre renklendirilsin ?  Lütfen Seçiminizi yapın.", 
+sınıflandırma_secimi = st.sidebar.selectbox(label = "Harita hangi özelliğe göre Sınıflandırılsın ?  Lütfen Seçiminizi yapın.", 
                                          options =( "Ortalama Fiyat","İlçedeki toplam ev sayısı","En Yüksek Fiyat","En Düşük Fiyat","Ortanca Fiyat"))
 
 highlight_function = lambda x: {'fillColor': '#000000', 
