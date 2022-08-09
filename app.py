@@ -73,7 +73,7 @@ style_function = lambda x: {'fillColor': '#ffffff',
                             'color':'#000000', 
                             'fillOpacity': 0.1, 
                             'weight': 0.1}
-
+ 
 
 
 map=folium.Map(zoom_start=9,location=[41.2, 29],tiles="CartoDB Positron" )
