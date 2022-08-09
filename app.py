@@ -11,9 +11,10 @@ st.set_page_config(page_title="Berkay_CBS",page_icon=":smile:")
 st.header("CBS PROJESİ")
 st.markdown("Çalışmada İstanbul ili içerisindeki, Airbnb uygulamasında mevcut olan evlere dair ham veriler işlenmiş ve görselleştirilmiştir. Çalışmada evler ilçe bazlı olarak gruplandırılmıştır.  İlçelerdeki kiralık evlere ait nitelikler sol taraftaki araç çubuğundan filtrelerenerek harita üzerinden sorgulanabilir")
 
-
+[theme]
 base="dark"
-secondaryBackgroundColor="#3b9e79"
+backgroundColor="#101318"
+secondaryBackgroundColor="#5e085e"
 
 evler=pd.read_csv("https://raw.githubusercontent.com/berkaymbaskaya/streamlit/gh-pages/listings.csv")
 ilceler=gpd.read_file("https://raw.githubusercontent.com/berkaymbaskaya/streamlit/gh-pages/neighbourhoods.geojson")
