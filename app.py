@@ -15,8 +15,8 @@ st.markdown("Çalışmada İstanbul ili içerisindeki, Airbnb uygulamasında mev
 base="dark"
 secondaryBackgroundColor="#3b9e79"
 
-evler=pd.read_csv("C:/Users/rebaa/Desktop/CBS PROJELERİ/istanbul/airbnb/listings.csv")
-ilceler=gpd.read_file("C:/Users/rebaa/Desktop/CBS PROJELERİ/istanbul/airbnb/neighbourhoods.geojson")
+evler=pd.read_csv("https://raw.githubusercontent.com/berkaymbaskaya/streamlit/gh-pages/listings.csv")
+ilceler=gpd.read_file("https://raw.githubusercontent.com/berkaymbaskaya/streamlit/gh-pages/neighbourhoods.geojson")
 
 evler["geometry"]=evler[["longitude","latitude"]].apply(shp.Point,axis=1)
 evler=gpd.GeoDataFrame(evler)
