@@ -54,8 +54,8 @@ ilceler=ilceler.merge(b_df,on="neighbourhood")
 ilceler=ilceler.merge(m_df,on="neighbourhood")
 
 
-#image=Image.open("https://r.resimlink.com/zNOLkjyeAQ.jpg")
-#st.image(image,width=750)
+image=Image.open("https://r.resimlink.com/zNOLkjyeAQ.jpg")
+st.image(image,width=750)
 
 sınıflandırma_dict={"Ortalama Fiyat":"price","İlçedeki toplam ev sayısı":"birim","En Yüksek Fiyat":"max_price","En Düşük Fiyat":"min_price","Ortanca Fiyat":"median_price"}
 
